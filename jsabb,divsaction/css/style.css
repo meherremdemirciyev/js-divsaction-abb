@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3rem;
+    background-color: #F6F7F8;
+}
+
+.header-top nav a{
+    color: #666;
+    font-size: 14px;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+@media (max-width:576px) {
+    nav a{
+        display: none;
+    }
+    .header-top{
+        padding: 20px 1rem;
+    }
+}
+
+.header-top nav #Individual{
+    display: none;
+}
+
+@media (max-width:576px) {
+    .header-top nav #Individual{
+        display: inline-block;
+    }
+}
+
+@media (max-width:576px) {
+    .header-top nav #Individual .private{
+        display: inline-block;
+    }
+}
+
+.header-top nav .button{
+    color: #0056c1 !important;
+    border: 2px solid #0056c1;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600 !important;
+}
+
+.header-top .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top .icons .icon{
+    margin-left: 25px;
+}
+
+.header-top .icons .icon #down{
+    transition: .5s;
+}
+
+@media(max-width:576px) {
+        .header-top .icons .icon .search{
+        display: none;
+    }
+}
+
+
+#help{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    display: none;
+}
+
+#help h1{
+    font-size: 30px;
+    color: #666 ;
+    
+}
+
+#help a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.active{
+    display: flex !important;
+}
+
+.active1{
+    display: block !important;
+}
+
+.active2{
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+#flags{
+    width: 170px;
+    height: 100px;
+    background-color: rgb(246, 241, 241);
+    top: 60px;
+    right: 110px;
+    position: absolute;
+    display: none;
+}
+
+#flags::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(246, 241, 241);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#flags .flag{
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#flags .flag:hover{
+    background-color: #d4cece;
+}
+
+#flags .flag img{
+    width: 25%;
+}
+
+#flags .flag span{
+    margin-left: 20px;
+}
+
+
+
+
+/* #first{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+#second{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 100%;
+    margin: 250px auto;
+}  */
